@@ -1,0 +1,369 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Polo Gorment Center</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="WEB image/LOGO.png.png" alt=""> 
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="WEB image/search icon.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width: 100px;">Login</button>
+                
+                <div id="id01" class="modal">
+                  
+                  <form class="modal-content animate" action="/login.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="WEB image/LOGO.png.png" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="containerforclosebutton">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me. 
+                      </label>
+                    </div>
+                
+                    <div class="ontainerforclosebutton" style="background-color:#8ed48e">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">ACTIVE WEAR</h3>
+            <h3 class="menuItem">CASUAL</h3>
+            <h3 class="menuItem">BEACH WEAR</h3>
+            <h3 class="menuItem">SPECIAL OCCASION</h3>
+            <h3 class="menuItem">WORK WEAR</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="WEB image/activewear.png" height="90%" alt="" class="sliderImg" width="30%">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Santa Barbara Polo & Racquet Club <br>ACTIVE WEAR </h1>
+                <h2 class="sliderPrice">₱999</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="WEB image/casual.png" height="80%"  alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Santa Barbara Polo & Racquet Club <br> CASUAL</h1>
+                <h2 class="sliderPrice">₱1,299</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="WEB image/baechwear.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Santa Barbara Polo & Racquet Club <br> BEACH WEAR</h1>
+                <h2 class="sliderPrice">₱699</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="WEB image/special occation.png" height="100%" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Santa Barbara Polo & Racquet Club <br> SPECIAL OCCASION</h1>
+                <h2 class="sliderPrice">₱1,999</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="WEB image/work wear.png"  height="80%" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Santa Barbara Polo & Racquet Club <br> WORK WEAR</h1>
+                <h2 class="sliderPrice">₱1,299</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="WEB image/free-shipping-icon.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="WEB image/return-icon-15.jpg" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="WEB image/GIFT CARD.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="WEB image/contact-icon-png-6.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="WEB image/activewear.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Santa Barbara Polo & Racquet Club </h1>
+            <p class="productDesc">Elevate Your Wardrobe with Distinctive Flair: Santa Barbara Polo & Racquet Club Clothing - Redefining Timeless Style.</p>
+            <div class="sizes">
+                <div class="size">L</div>
+                <div class="size">XL</div>
+                <div class="size">XXL</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment"> 
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Juan Dela Cruz" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+639563421907" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Lopez, Quezon" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="WEB image/Visa-Logo.png" width="40" alt="" class="cardIcon">
+                <img src="WEB image/mastercard-logo.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+
+
+<!------ featured catheories ------>
+<div class="featured-categories">
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club </h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-2-removebg-preview.png">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-3-removebg-preview.png">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club </h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-4-removebg-preview.png" >
+        <p>₱699.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-2766-9045762-5-removebg-preview.png">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-6-removebg-preview.png">
+        <p>₱1,199.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-7-removebg-preview.png">
+        <p>₱799.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/vZNo0mWqPh_Dad8oF11ZGQkQANA=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-7551-8293152-5.jpg">
+        <p>₱1,299.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/bD_WL2BNwfDyi5RMMWBAzAujVNw=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-0748-4938242-5.jpg">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/m3N0aj3V9Q1pl-44f9xdQpNflnM=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-2941-6935762-5.jpg">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/Ycz2-5GRNObhGRwjPfKBI0F4O9I=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-3085-9735762-5.jpg">
+        <p>₱999.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/gnh9MVOFjJlLbV66UQZyvdFoWI0=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-8197-7789452-5.jpg">
+        <p>₱799.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="https://dynamic.zacdn.com/Zop-aydaIVpi1M0Ct72oxXGgq0E=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-1601-5935762-5.jpg">
+        <p>₱1,899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-5037-9293152-5.jpg">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-8.png">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="featured-category-item">
+        <h1 class="featured-category-title">Santa Barbara Polo & Racquet Club</h1>
+        <img src="WEB image/santa-barbara-polo-racquet-club-9.png">
+        <p>₱899.75</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+ 
+</div>
+
+<!------ featured products ------>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Discover timeless elegance with</h1>
+            <img src="https://dynamic.zacdn.com/Q3uxrgeLaYHwdq52jXc4IYeK0n8=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-6372-1937272-1.jpg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://dynamic.zacdn.com/AH57QYTm5h1spc7UTsQCVf_fDEI=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-1600-5935762-1.jpg"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Santa Barbara Polo & Racquet Club Clothing</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Elevate your style with sophisticated classics, exclusively</h1>
+            <img src="https://dynamic.zacdn.com/BKgFsivbw8HwYzZilDTOOsYtTCo=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/santa-barbara-polo-racquet-club-2940-6935762-1.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://hurlinghampolo.com/wp-content/uploads/2019/07/SB19-05878-1.jpg"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">Sophisticated, Timeless, Refined </h3>
+            <h1 class="nsTitle">Elevate style with Santa Barbara Polo & Racquet Club Clothing </h1>
+            <h1 class="nsTitle">where timeless sophistication meets exclusive classics</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://i.ytimg.com/vi/Ql0R3wHx1cg/maxresdefault.jpg"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">ACTIVE WEAR</li>
+                    <li class="fListItem">CASUAL</li>
+                    <li class="fListItem">BEACH WEAR</li>
+                    <li class="fListItem">SPECIAL OCCASION</li>
+                    <li class="fListItem">WORK WEAR</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="http://www.freeiconspng.com/uploads/facebook-icon--basic-round-social-iconset--s-icons-7.png" alt="" class="fIcon">
+                    <img src="https://pluspng.com/img-png/twitter-logo-png-logo-twitter-in-png-2500.png" alt="" class="fIcon">
+                    <img src="https://freepngimg.com/thumb/computer/68394-computer-instagram-icons-png-file-hd.png" alt="" class="fIcon">
+                    <img src="http://www.pngall.com/wp-content/uploads/2016/04/WhatsApp-PNG-Picture.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">Polo Gorment Center. All right Recieved 2024 .</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./hoome.js"></script>
+</body>
+ 
+</html>
